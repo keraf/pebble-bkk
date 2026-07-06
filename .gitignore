@@ -1,0 +1,15 @@
+# Pebble build output
+build/
+dist/
+dist.zip
+*.pbw
+
+# waf build system
+.lock-waf*
+__pycache__/
+
+# npm
+node_modules/
+
+# Claude Code local settings
+.claude/settings.local.json

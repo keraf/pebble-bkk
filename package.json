@@ -1,0 +1,72 @@
+{
+  "name": "pebble-bkk",
+  "author": "Rafael Keramidas <rafael@keramid.as>",
+  "version": "1.0.0",
+  "description": "Pebble watchapp showing nearby Budapest (BKK) public transport stops and live departures.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rafaelkeramidas/pebble-bkk"
+  },
+  "keywords": [
+    "pebble-app",
+    "pebble",
+    "bkk",
+    "budapest",
+    "public-transport",
+    "futar"
+  ],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "BKK Departures",
+    "uuid": "f6eea442-7c81-4939-80a7-86d262297767",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery",
+      "flint",
+      "gabbro"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "capabilities": [
+      "location",
+      "configurable"
+    ],
+    "messageKeys": [
+      "REQUEST",
+      "STOP_ID",
+      "MSG_KIND",
+      "COUNT",
+      "ERROR_CODE",
+      "REFRESH_SECS",
+      "API_KEY",
+      "RADIUS",
+      "LANG",
+      "ITEM_NAME[8]",
+      "ITEM_SUB[8]",
+      "ITEM_TYPE[8]",
+      "ITEM_TIME[8]",
+      "ITEM_RT[8]",
+      "ITEM_COLOR[8]",
+      "ITEM_TEXTCOL[8]",
+      "ITEM_BADGE[8]"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "png",
+          "name": "IMAGE_MENU_ICON",
+          "file": "images/menu_icon.png",
+          "menuIcon": true
+        }
+      ]
+    }
+  }
+}
